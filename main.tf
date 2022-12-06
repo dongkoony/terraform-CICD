@@ -10,7 +10,7 @@ terraform {
     bucket = "bucket-1992-0924"
     dynamodb_table = "tfstatelock-dynamo"
     key = "global/s3/terraform.tfstate"
-    region = var.aws_region
+    region = "us-east-1"
   }
 }
 
