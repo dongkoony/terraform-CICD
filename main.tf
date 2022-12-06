@@ -1,7 +1,7 @@
 provider "aws" {
-  region = var.aws_region
-  secret_key = var.secret_key_nike
-  access_key = var.access_key_nike
+  region = "us-east-1"
+  secret_key = "NVIu1NyAYt5MS9fjFU7CL1Mn/wtl+BsE1rDNL0L7"
+  access_key = "AKIAWHER3VJO6LEHPPJL"
 }
 
 terraform {

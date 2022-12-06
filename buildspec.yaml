@@ -10,15 +10,15 @@ phases:
       - "mv terraform /usr/local/bin"
       - "echo command complete"
 
-  pre_build:
-    commands:
-      - "terraform init"
-      - "echo terraform init complete"
+    pre_build:
+      commands:
+        - terraform init
+        - echo terraform init complete
 
-  build:
-    commands:
-      - "terraform apply -auto-approve"
-      - "echo terraform apply complete"
-  post_build:
-    commands:
-      - "echo terraform post build complete"
+    build:
+      commands:
+        - terraform apply -auto-approve
+        - echo terraform apply complete
+    post_build:
+      commands:
+        - echo terraform post build complete
